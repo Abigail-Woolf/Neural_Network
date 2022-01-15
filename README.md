@@ -14,6 +14,18 @@ The tanh function is also identified by a characteristic S curve; however, it tr
 The Rectified Linear Unit (ReLU) function returns a value from 0 to infinity, so any negative input through the activation function is 0. It is the most used activation function in neural networks due to its simplifying output, but it might not be appropriate for simpler models.
 The Leaky ReLU function is a “leaky” alternative to the ReLU function, whereby negative input values will return very small negative values.
 We are using the Keras module in the TensorFlow library. two keras classes: Sequential and Dense
+adam optimizer usees gradient descent approach to ensure that the algorithm will not get stuck on weaker classifying variables and features.
+the loss function binary_crossentropy  specifically designed to evaluate a binary classification model.
+evaluation metric, which measures the quality of the machine learning model. 
+A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs.
+There are a few means of optimizing a neural network:
+
+Check out your input dataset.
+Add more neurons to a hidden layer.
+Add additional hidden layers.
+Use a different activation function for the hidden layers.
+Add additional epochs to the training regimen.
+This concept of a multiple-layered neural network is known as a deep learning neural network.
 To optimize the deep neural network that I created, I tested a variety of hidden layer combinations with different activation functions. Although I tried a wide variety, I did not find any improvement in my Loss or Accuracy scores. There was once instance, where the Loss and Accuracy scores returned worse values than my original model. This happened when I used the Relu activation function on the output layer. I ended up chooseing four hidden layers with 3, 3, 6, 6 neurons respectively, although I did not see any change when altering the number of neurons or hidden layers. The Loss metricI acheived was ~0.69 and the Accuracy wasy ~0.53. In order to imporve this overall the overal learning, I would stick to the binary classification model, but I would manipulate the input data more. Perhaps there were outlier data points that threw off the training model. Maybe I dropped too many variables, or maybe I did not drop enough. I would experiement with mutiple combinations of variables to see if I could improve my machine learning metrics. 
 <img width="797" alt="Screen Shot 2022-01-13 at 6 24 13 PM" src="https://user-images.githubusercontent.com/65195902/149440846-76e9eee2-dae7-47ba-a820-6bece405191b.png">
 <img width="791" alt="Screen Shot 2022-01-13 at 6 33 58 PM" src="https://user-images.githubusercontent.com/65195902/149441762-f264cc4b-d43b-4ca6-9c9a-5c614b714a4f.png">
