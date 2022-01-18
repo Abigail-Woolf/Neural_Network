@@ -19,7 +19,7 @@ Bias is a constant value added to the input to influence the final decision, typ
 
 A net summary function that aggregates all weighted inputs, in this case a weighted summation:
 
-### Basic Neural Network
+#### * Basic Neural Network
 A basic neural network has three layers:
 
 An input layer of input values transformed by weight coefficients
@@ -28,31 +28,17 @@ A single “hidden” layer of neurons (single neuron or multiple neurons)
 
 An output layer that reports the classification or regression model value
 
-activation function - mathematical function applied to the end of each neuron (or each perceptron model) that trasnforms the output to a quantitative value, which is used as an input for other layers in the NN. 
+* The neural net combines each neuron's output into a single classifier or regression model with an activation function - mathematical function applied to the end of each neuron (or each perceptron model) that trasnforms the output to a quantitative value, which is used as an input for other layers in the NN. 
+
 The linear function returns the sum of our weighted inputs without transformation.
+
 The sigmoid function is identified by a characteristic S curve. It transforms the output to a range between 0 and 1.
+
 The tanh function is also identified by a characteristic S curve; however, it transforms the output to a range between -1 and 1.
+
 The Rectified Linear Unit (ReLU) function returns a value from 0 to infinity, so any negative input through the activation function is 0. It is the most used activation function in neural networks due to its simplifying output, but it might not be appropriate for simpler models.
+
 The Leaky ReLU function is a “leaky” alternative to the ReLU function, whereby negative input values will return very small negative values.
-We are using the Keras module in the TensorFlow library. two keras classes: Sequential and Dense
-adam optimizer usees gradient descent approach to ensure that the algorithm will not get stuck on weaker classifying variables and features.
-the loss function binary_crossentropy  specifically designed to evaluate a binary classification model.
-evaluation metric, which measures the quality of the machine learning model. 
-A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs.
-There are a few means of optimizing a neural network:
-
-Check out your input dataset.
-Add more neurons to a hidden layer.
-Add additional hidden layers.
-Use a different activation function for the hidden layers.
-Add additional epochs to the training regimen.
-This concept of a multiple-layered neural network is known as a deep learning neural network.
-neural nets cannot handle categorical values so I encoded and grouped them using one-hot encoding which identifies all unique column values and splits the single categorical column into a series of columns each containing information about a single unique categorical value., binary encoding. this does not work as well if there is a large amount of unique categorical values, so we can use bucketing or binning.  to reduce the number fo unique calues.
-Although basic neural networks are relatively easy to conceptualize and understand, there are limitations to using a basic neural network, such as:
-
-A basic neural network with many neurons will require more training data than other comparable statistics and machine learning models to produce an adequate model.
-Basic neural networks struggle to interpret complex nonlinear numerical data, or data with many confounding factors that have hidden effects on more than one variable.
-Basic neural networks are incapable of analyzing image datasets without severe data preprocessing.
 
 ## Data
 From the firm’s business team, I received a CSV containing more than 34,000 organizations that have received various amounts of funding over the years. Within this dataset are a number of columns that capture metadata about each organization such as the following:
