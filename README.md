@@ -7,7 +7,7 @@ Neural networks are a set of algorithms that are modeled after the human brain. 
 
 NN's can be used for classification problems, or can behave like a regression model. They can be better than traditional ML models because they can detect complex, non-linear relationships and can handle messy data and a lot of noise. However, they are prone to overfitting. 
 
-### perceptron model
+#### * perceptron model
 The perceptron model is a single neural network unit, and it mimics a biological neuron by receiving input data, weighing the information, and producing a clear output.
 The four major components:
 
