@@ -4,6 +4,7 @@ Fo this assignment, the task was to analyzes the impact of each of a philanthrop
 
 ## Data
 From the firm’s business team, I received a CSV containing more than 34,000 organizations that have received various amounts of funding over the years. Within this dataset are a number of columns that capture metadata about each organization such as the following:
+
 EIN and NAME—Identification columns
 APPLICATION_TYPE—Alphabet Soup application type
 AFFILIATION—Affiliated sector of industry
